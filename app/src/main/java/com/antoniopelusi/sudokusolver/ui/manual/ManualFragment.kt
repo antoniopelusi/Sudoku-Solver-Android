@@ -22,16 +22,13 @@ class ManualFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val manualViewModel =
-            ViewModelProvider(this).get(ManualViewModel::class.java)
 
         _binding = FragmentManualBinding.inflate(inflater, container, false)
+
         val root: View = binding.root
 
-        val textView: TextView = binding.textManual
-        manualViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
+
         return root
     }
 
