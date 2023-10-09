@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sudoku Solver</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_manual">Manual</string>
+    <string name="open_camera">Open camera</string>
+
+</resources>
