@@ -24,7 +24,7 @@ class ManualFragment : Fragment() {
 
     private val solver = Solver()
 
-    private fun writeBoard(board: Array<IntArray>)
+    private fun initBoard()
     {
         val c11: EditText? = view?.findViewById(R.id.c11)
         val c12: EditText? = view?.findViewById(R.id.c12)
@@ -120,7 +120,10 @@ class ManualFragment : Fragment() {
                 arrayOf(c81, c82, c83, c84, c85, c86, c87, c88, c89),
                 arrayOf(c91, c92, c93, c94, c95, c96, c97, c98, c99)
             )
+    }
 
+    private fun writeBoard(board: Array<IntArray>)
+    {
         for(i in 0 until 9)
         {
             for(j in 0 until 9)
@@ -133,7 +136,6 @@ class ManualFragment : Fragment() {
                 {
                     cells[i][j]?.setText(board[i][j].toString())
                 }
-
             }
         }
     }
@@ -186,7 +188,7 @@ class ManualFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
     {
         super.onViewCreated(view, savedInstanceState)
-
+        initBoard()
         writeBoard(emptyBoard)
     }
 
