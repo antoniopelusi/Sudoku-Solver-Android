@@ -4,6 +4,7 @@
     <string name="title_camera">Camera</string>
     <string name="title_manual">Manual</string>
     <string name="open_camera">Open camera</string>
+    <string name="reset">Reset</string>
     <string name="solve">Solve</string>
     <string name="sudoku_solver">Sudoku Solver</string>
     <string name="text_home">To start solving a Sudoku, take a photo or manually enter the digits using the navigation bar below</string>

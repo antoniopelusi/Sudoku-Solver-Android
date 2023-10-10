@@ -1,16 +1,14 @@
 package com.antoniopelusi.sudokusolver.ui.manual
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.antoniopelusi.sudokusolver.R
-import com.antoniopelusi.sudokusolver.Solver
 import com.antoniopelusi.sudokusolver.databinding.FragmentManualBinding
+import com.antoniopelusi.sudokusolver.Solver
 
 class ManualFragment : Fragment() {
 
@@ -18,7 +16,15 @@ class ManualFragment : Fragment() {
     
     private val binding get() = _binding!!
 
-    private fun init_board()
+    private val emptyBoard = Array(9) { IntArray(9) }
+
+    private var board = Array(9) { IntArray(9) }
+
+    private lateinit var cells: Array<Array<EditText?>>
+
+    private val solver = Solver()
+
+    private fun writeBoard(board: Array<IntArray>)
     {
         val c11: EditText? = view?.findViewById(R.id.c11)
         val c12: EditText? = view?.findViewById(R.id.c12)
@@ -102,7 +108,7 @@ class ManualFragment : Fragment() {
         val c98: EditText? = view?.findViewById(R.id.c98)
         val c99: EditText? = view?.findViewById(R.id.c99)
 
-        val cells =
+        cells =
             arrayOf(
                 arrayOf(c11, c12, c13, c14, c15, c16, c17, c18, c19),
                 arrayOf(c21, c22, c23, c24, c25, c26, c27, c28, c29),
@@ -115,18 +121,44 @@ class ManualFragment : Fragment() {
                 arrayOf(c91, c92, c93, c94, c95, c96, c97, c98, c99)
             )
 
-        val board = Array(9) { IntArray(9) }
-        //cells[1][1]?.setText(board[0][0].toString())
-        //Log.v("TAG", cells[0][0]?.text.toString())
+        for(i in 0 until 9)
+        {
+            for(j in 0 until 9)
+            {
+                if(board[i][j] == 0)
+                {
+                    cells[i][j]?.setText("")
+                }
+                else
+                {
+                    cells[i][j]?.setText(board[i][j].toString())
+                }
+
+            }
+        }
+    }
+
+    private fun readBoard(cells: Array<Array<EditText?>>): Array<IntArray>
+    {
+        val newBoard = Array(9) { IntArray(9) }
 
         for(i in 0 until 9)
         {
             for(j in 0 until 9)
             {
-                cells[i][j]?.setText(board[i][j].toString())
-                Log.v(i.toString()+j.toString(), cells[0][0]?.text.toString())
+                if(cells[i][j]?.text.toString() == "")
+                {
+                    newBoard[i][j] = 0
+                }
+                else
+                {
+                    newBoard[i][j] = cells[i][j]?.text.toString().toInt()
+                }
+
             }
         }
+
+        return newBoard
     }
 
     override fun onCreateView(
@@ -139,12 +171,23 @@ class ManualFragment : Fragment() {
 
         val solveButton = binding.solveButtonManual
         solveButton.setOnClickListener {
-            init_board()
+            board = readBoard(cells)
+            solver.solve(board, 0, 0)
+            writeBoard(board)
+        }
+        val resetButton = binding.resetButtonManual
+        resetButton.setOnClickListener {
+            writeBoard(emptyBoard)
         }
 
-        val root: View = binding.root
+        return binding.root
+    }
 
-        return root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
+        super.onViewCreated(view, savedInstanceState)
+
+        writeBoard(emptyBoard)
     }
 
     override fun onDestroyView() {

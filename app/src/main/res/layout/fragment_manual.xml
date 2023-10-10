@@ -29,8 +29,10 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
+                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:text="1"
+                android:inputType="number"
+                android:maxLength="1"
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
@@ -1115,6 +1117,18 @@
                 android:textStyle="bold" />
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:id="@+id/reset_button_manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/solve_button_manual"
