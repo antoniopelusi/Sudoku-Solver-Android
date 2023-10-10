@@ -1,7 +1,6 @@
 package com.antoniopelusi.sudokusolver
 
 class Solver {
-
     fun write_board(board: Array<IntArray>)
     {
         for(x in 0 until 9)
@@ -48,8 +47,8 @@ class Solver {
             }
         }
 
-        var startRow: Int = row - row % 3
-        var startCol: Int = column - column % 3
+        val startRow: Int = row - row % 3
+        val startCol: Int = column - column % 3
 
         for(x in 0 until 3)
         {
