@@ -30,7 +30,7 @@ class Solver {
         }
     }
 
-    fun check(board: Array<IntArray>, row: Int, column: Int, num: Int): Boolean
+    private fun check(board: Array<IntArray>, row: Int, column: Int, num: Int): Boolean
     {
         for(y in 0 until 9)
         {
@@ -64,7 +64,7 @@ class Solver {
         return true
     }
 
-    fun solve(board: Array<IntArray>, _row: Int, _column: Int): Boolean
+    private fun solve(board: Array<IntArray>, _row: Int, _column: Int): Boolean
     {
         var row = _row
         var column = _column
