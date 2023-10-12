@@ -126,7 +126,7 @@ class ManualFragment : Fragment() {
         writeBoard(emptyBoard)
     }
 
-    private fun writeBoard(board: Array<IntArray>)
+    fun writeBoard(board: Array<IntArray>)
     {
         for(i in 0 until 9)
         {
