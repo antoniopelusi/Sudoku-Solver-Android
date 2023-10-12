@@ -6,6 +6,8 @@
     <string name="open_camera">Open camera</string>
     <string name="reset">Reset</string>
     <string name="solve">Solve</string>
+    <string name="scan_qr">Scan QR</string>
     <string name="sudoku_solver">Sudoku Solver</string>
-    <string name="text_home">To start solving a Sudoku, take a photo or manually enter the digits using the navigation bar below</string>
+    <string name="text_home">Use the navigation bar below\nto start solving a Sudoku</string>
+    <string name="text_camera">Scan the Sudoku QR code\nto solve it</string>
 </resources>

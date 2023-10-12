@@ -6,43 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".ui.camera.CameraFragment">
 
-    <Button
-        android:id="@+id/camera_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginBottom="172dp"
-        android:text="@string/open_camera"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/text_home2"
+        android:layout_width="269dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="71dp"
+        android:gravity="center"
+        android:text="@string/text_camera"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/click_image"
-        android:layout_width="350dp"
-        android:layout_height="450dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="98dp"
-        app:layout_constraintBottom_toTopOf="@+id/camera_button"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/solve_button_camera"
+        android:id="@+id/scan_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="109dp"
-        android:text="@string/solve"
+        android:text="@string/scan_qr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camera_button" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

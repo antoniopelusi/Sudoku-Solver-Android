@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import com.antoniopelusi.sudokusolver.R
 import com.antoniopelusi.sudokusolver.databinding.FragmentManualBinding
@@ -120,6 +122,8 @@ class ManualFragment : Fragment() {
                 arrayOf(c81, c82, c83, c84, c85, c86, c87, c88, c89),
                 arrayOf(c91, c92, c93, c94, c95, c96, c97, c98, c99)
             )
+
+        writeBoard(emptyBoard)
     }
 
     private fun writeBoard(board: Array<IntArray>)
@@ -185,11 +189,10 @@ class ManualFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
-    {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         initBoard()
-        writeBoard(emptyBoard)
     }
 
     override fun onDestroyView() {

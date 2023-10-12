@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/title_home"
             android:layout_width="match_parent"
-            android:layout_height="274dp"
+            android:layout_height="156dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -28,7 +28,7 @@
         <TextView
             android:id="@+id/text_home"
             android:layout_width="269dp"
-            android:layout_height="246dp"
+            android:layout_height="170dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
