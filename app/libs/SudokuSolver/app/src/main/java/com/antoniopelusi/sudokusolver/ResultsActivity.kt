@@ -4,102 +4,102 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class ResultsActivity : AppCompatActivity() {
 
     private val emptyBoard = Array(9) { IntArray(9) }
 
-    private lateinit var newBoard: Array<IntArray>
+    private lateinit var board: Array<IntArray>
 
-    private lateinit var cells: Array<Array<EditText?>>
+    private lateinit var cells: Array<Array<TextView?>>
 
     private val solver = Solver()
 
     private fun initBoard()
     {
-        val c11: EditText? = findViewById(R.id.c11)
-        val c12: EditText? = findViewById(R.id.c12)
-        val c13: EditText? = findViewById(R.id.c13)
-        val c14: EditText? = findViewById(R.id.c14)
-        val c15: EditText? = findViewById(R.id.c15)
-        val c16: EditText? = findViewById(R.id.c16)
-        val c17: EditText? = findViewById(R.id.c17)
-        val c18: EditText? = findViewById(R.id.c18)
-        val c19: EditText? = findViewById(R.id.c19)
-        val c21: EditText? = findViewById(R.id.c21)
-        val c22: EditText? = findViewById(R.id.c22)
-        val c23: EditText? = findViewById(R.id.c23)
-        val c24: EditText? = findViewById(R.id.c24)
-        val c25: EditText? = findViewById(R.id.c25)
-        val c26: EditText? = findViewById(R.id.c26)
-        val c27: EditText? = findViewById(R.id.c27)
-        val c28: EditText? = findViewById(R.id.c28)
-        val c29: EditText? = findViewById(R.id.c29)
-        val c31: EditText? = findViewById(R.id.c31)
-        val c32: EditText? = findViewById(R.id.c32)
-        val c33: EditText? = findViewById(R.id.c33)
-        val c34: EditText? = findViewById(R.id.c34)
-        val c35: EditText? = findViewById(R.id.c35)
-        val c36: EditText? = findViewById(R.id.c36)
-        val c37: EditText? = findViewById(R.id.c37)
-        val c38: EditText? = findViewById(R.id.c38)
-        val c39: EditText? = findViewById(R.id.c39)
-        val c41: EditText? = findViewById(R.id.c41)
-        val c42: EditText? = findViewById(R.id.c42)
-        val c43: EditText? = findViewById(R.id.c43)
-        val c44: EditText? = findViewById(R.id.c44)
-        val c45: EditText? = findViewById(R.id.c45)
-        val c46: EditText? = findViewById(R.id.c46)
-        val c47: EditText? = findViewById(R.id.c47)
-        val c48: EditText? = findViewById(R.id.c48)
-        val c49: EditText? = findViewById(R.id.c49)
-        val c51: EditText? = findViewById(R.id.c51)
-        val c52: EditText? = findViewById(R.id.c52)
-        val c53: EditText? = findViewById(R.id.c53)
-        val c54: EditText? = findViewById(R.id.c54)
-        val c55: EditText? = findViewById(R.id.c55)
-        val c56: EditText? = findViewById(R.id.c56)
-        val c57: EditText? = findViewById(R.id.c57)
-        val c58: EditText? = findViewById(R.id.c58)
-        val c59: EditText? = findViewById(R.id.c59)
-        val c61: EditText? = findViewById(R.id.c61)
-        val c62: EditText? = findViewById(R.id.c62)
-        val c63: EditText? = findViewById(R.id.c63)
-        val c64: EditText? = findViewById(R.id.c64)
-        val c65: EditText? = findViewById(R.id.c65)
-        val c66: EditText? = findViewById(R.id.c66)
-        val c67: EditText? = findViewById(R.id.c67)
-        val c68: EditText? = findViewById(R.id.c68)
-        val c69: EditText? = findViewById(R.id.c69)
-        val c71: EditText? = findViewById(R.id.c71)
-        val c72: EditText? = findViewById(R.id.c72)
-        val c73: EditText? = findViewById(R.id.c73)
-        val c74: EditText? = findViewById(R.id.c74)
-        val c75: EditText? = findViewById(R.id.c75)
-        val c76: EditText? = findViewById(R.id.c76)
-        val c77: EditText? = findViewById(R.id.c77)
-        val c78: EditText? = findViewById(R.id.c78)
-        val c79: EditText? = findViewById(R.id.c79)
-        val c81: EditText? = findViewById(R.id.c81)
-        val c82: EditText? = findViewById(R.id.c82)
-        val c83: EditText? = findViewById(R.id.c83)
-        val c84: EditText? = findViewById(R.id.c84)
-        val c85: EditText? = findViewById(R.id.c85)
-        val c86: EditText? = findViewById(R.id.c86)
-        val c87: EditText? = findViewById(R.id.c87)
-        val c88: EditText? = findViewById(R.id.c88)
-        val c89: EditText? = findViewById(R.id.c89)
-        val c91: EditText? = findViewById(R.id.c91)
-        val c92: EditText? = findViewById(R.id.c92)
-        val c93: EditText? = findViewById(R.id.c93)
-        val c94: EditText? = findViewById(R.id.c94)
-        val c95: EditText? = findViewById(R.id.c95)
-        val c96: EditText? = findViewById(R.id.c96)
-        val c97: EditText? = findViewById(R.id.c97)
-        val c98: EditText? = findViewById(R.id.c98)
-        val c99: EditText? = findViewById(R.id.c99)
+        val c11: TextView? = findViewById(R.id.c11)
+        val c12: TextView? = findViewById(R.id.c12)
+        val c13: TextView? = findViewById(R.id.c13)
+        val c14: TextView? = findViewById(R.id.c14)
+        val c15: TextView? = findViewById(R.id.c15)
+        val c16: TextView? = findViewById(R.id.c16)
+        val c17: TextView? = findViewById(R.id.c17)
+        val c18: TextView? = findViewById(R.id.c18)
+        val c19: TextView? = findViewById(R.id.c19)
+        val c21: TextView? = findViewById(R.id.c21)
+        val c22: TextView? = findViewById(R.id.c22)
+        val c23: TextView? = findViewById(R.id.c23)
+        val c24: TextView? = findViewById(R.id.c24)
+        val c25: TextView? = findViewById(R.id.c25)
+        val c26: TextView? = findViewById(R.id.c26)
+        val c27: TextView? = findViewById(R.id.c27)
+        val c28: TextView? = findViewById(R.id.c28)
+        val c29: TextView? = findViewById(R.id.c29)
+        val c31: TextView? = findViewById(R.id.c31)
+        val c32: TextView? = findViewById(R.id.c32)
+        val c33: TextView? = findViewById(R.id.c33)
+        val c34: TextView? = findViewById(R.id.c34)
+        val c35: TextView? = findViewById(R.id.c35)
+        val c36: TextView? = findViewById(R.id.c36)
+        val c37: TextView? = findViewById(R.id.c37)
+        val c38: TextView? = findViewById(R.id.c38)
+        val c39: TextView? = findViewById(R.id.c39)
+        val c41: TextView? = findViewById(R.id.c41)
+        val c42: TextView? = findViewById(R.id.c42)
+        val c43: TextView? = findViewById(R.id.c43)
+        val c44: TextView? = findViewById(R.id.c44)
+        val c45: TextView? = findViewById(R.id.c45)
+        val c46: TextView? = findViewById(R.id.c46)
+        val c47: TextView? = findViewById(R.id.c47)
+        val c48: TextView? = findViewById(R.id.c48)
+        val c49: TextView? = findViewById(R.id.c49)
+        val c51: TextView? = findViewById(R.id.c51)
+        val c52: TextView? = findViewById(R.id.c52)
+        val c53: TextView? = findViewById(R.id.c53)
+        val c54: TextView? = findViewById(R.id.c54)
+        val c55: TextView? = findViewById(R.id.c55)
+        val c56: TextView? = findViewById(R.id.c56)
+        val c57: TextView? = findViewById(R.id.c57)
+        val c58: TextView? = findViewById(R.id.c58)
+        val c59: TextView? = findViewById(R.id.c59)
+        val c61: TextView? = findViewById(R.id.c61)
+        val c62: TextView? = findViewById(R.id.c62)
+        val c63: TextView? = findViewById(R.id.c63)
+        val c64: TextView? = findViewById(R.id.c64)
+        val c65: TextView? = findViewById(R.id.c65)
+        val c66: TextView? = findViewById(R.id.c66)
+        val c67: TextView? = findViewById(R.id.c67)
+        val c68: TextView? = findViewById(R.id.c68)
+        val c69: TextView? = findViewById(R.id.c69)
+        val c71: TextView? = findViewById(R.id.c71)
+        val c72: TextView? = findViewById(R.id.c72)
+        val c73: TextView? = findViewById(R.id.c73)
+        val c74: TextView? = findViewById(R.id.c74)
+        val c75: TextView? = findViewById(R.id.c75)
+        val c76: TextView? = findViewById(R.id.c76)
+        val c77: TextView? = findViewById(R.id.c77)
+        val c78: TextView? = findViewById(R.id.c78)
+        val c79: TextView? = findViewById(R.id.c79)
+        val c81: TextView? = findViewById(R.id.c81)
+        val c82: TextView? = findViewById(R.id.c82)
+        val c83: TextView? = findViewById(R.id.c83)
+        val c84: TextView? = findViewById(R.id.c84)
+        val c85: TextView? = findViewById(R.id.c85)
+        val c86: TextView? = findViewById(R.id.c86)
+        val c87: TextView? = findViewById(R.id.c87)
+        val c88: TextView? = findViewById(R.id.c88)
+        val c89: TextView? = findViewById(R.id.c89)
+        val c91: TextView? = findViewById(R.id.c91)
+        val c92: TextView? = findViewById(R.id.c92)
+        val c93: TextView? = findViewById(R.id.c93)
+        val c94: TextView? = findViewById(R.id.c94)
+        val c95: TextView? = findViewById(R.id.c95)
+        val c96: TextView? = findViewById(R.id.c96)
+        val c97: TextView? = findViewById(R.id.c97)
+        val c98: TextView? = findViewById(R.id.c98)
+        val c99: TextView? = findViewById(R.id.c99)
 
         cells =
             arrayOf(
@@ -115,25 +115,39 @@ class ResultsActivity : AppCompatActivity() {
             )
     }
 
-    private fun writeBoard(rawValue: String)
+    private fun writeBoard(board: Array<IntArray>)
     {
-        var k = 0
-
         for(i in 0 until 9)
         {
             for(j in 0 until 9)
             {
-                if(rawValue[k] == '0')
+                if(board[i][j] == 0)
                 {
                     cells[i][j]?.setText("")
                 }
                 else
                 {
-                    cells[i][j]?.setText(rawValue[k].toString())
+                    cells[i][j]?.setText(board[i][j].toString())
                 }
+            }
+        }
+    }
+
+    private fun rawToBoard(rawValue: String): Array<IntArray>
+    {
+        var k = 0
+        val board = Array(9) { IntArray(9) }
+
+        for(i in 0 until 9)
+        {
+            for (j in 0 until 9)
+            {
+                board[i][j] = rawValue[k].toString().toInt()
+
                 k++
             }
         }
+        return board
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -142,14 +156,17 @@ class ResultsActivity : AppCompatActivity() {
         setContentView(R.layout.fragment_results)
 
         val rawValue = intent.getStringExtra("rawValue").toString()
-        //Toast.makeText(this, rawValue, Toast.LENGTH_SHORT).show()
+
+        board = rawToBoard(rawValue)
 
         initBoard()
 
+        writeBoard(board)
+
         findViewById<Button>(R.id.solve_button_results).setOnClickListener()
         {
-            //solver.solve(board, 0, 0)
-            writeBoard(rawValue)
+            solver.solve(board, 0, 0)
+            writeBoard(board)
         }
 
         findViewById<Button>(R.id.exit_button_results).setOnClickListener()

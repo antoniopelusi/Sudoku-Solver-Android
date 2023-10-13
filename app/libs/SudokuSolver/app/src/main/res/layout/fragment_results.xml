@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_results"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment_results"
+    android:layout_gravity="center"
     tools:context=".ui.manual.ManualFragment">
 
     <TableLayout
@@ -23,20 +24,21 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c11"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
+                android:text="1"
+                android:gravity="center"
                 android:textAlignment="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c12"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -49,7 +51,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c13"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -62,7 +64,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c14"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -75,7 +77,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c15"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -88,7 +90,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c16"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -101,7 +103,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c17"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -114,7 +116,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c18"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -127,7 +129,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c19"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -145,7 +147,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c21"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -158,7 +160,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c22"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -171,7 +173,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c23"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -184,7 +186,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c24"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -197,7 +199,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c25"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -210,7 +212,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c26"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -223,7 +225,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c27"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -236,7 +238,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c28"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -249,7 +251,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c29"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -267,7 +269,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c31"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -280,7 +282,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c32"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -293,7 +295,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c33"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -306,7 +308,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c34"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -319,7 +321,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c35"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -332,7 +334,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c36"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -345,7 +347,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c37"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -358,7 +360,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c38"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -371,7 +373,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c39"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -389,7 +391,7 @@
             android:gravity="center|center_horizontal"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c41"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -402,7 +404,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c42"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -415,7 +417,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c43"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -428,7 +430,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c44"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -441,7 +443,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c45"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -454,7 +456,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c46"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -467,7 +469,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c47"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -480,7 +482,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c48"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -493,7 +495,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c49"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -511,7 +513,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c51"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -524,7 +526,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c52"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -537,7 +539,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c53"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -550,7 +552,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c54"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -563,7 +565,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c55"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -576,7 +578,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c56"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -589,7 +591,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c57"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -602,7 +604,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c58"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -615,7 +617,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c59"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -633,7 +635,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c61"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -646,7 +648,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c62"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -659,7 +661,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c63"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -672,7 +674,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c64"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -685,7 +687,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c65"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -698,7 +700,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c66"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -711,7 +713,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c67"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -724,7 +726,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c68"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -737,7 +739,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c69"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -755,7 +757,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c71"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -768,7 +770,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c72"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -781,7 +783,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c73"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -794,7 +796,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c74"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -807,7 +809,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c75"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -820,7 +822,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c76"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -833,7 +835,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c77"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -846,7 +848,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c78"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -859,7 +861,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c79"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -877,7 +879,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c81"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -890,7 +892,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c82"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -903,7 +905,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c83"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -916,7 +918,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c84"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -929,7 +931,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c85"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -942,7 +944,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c86"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -955,7 +957,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c87"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -968,7 +970,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c88"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -981,7 +983,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c89"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -999,7 +1001,7 @@
             android:gravity="center"
             tools:ignore="LabelFor,UselessParent">
 
-            <EditText
+            <TextView
                 android:id="@+id/c91"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1012,7 +1014,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c92"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1025,7 +1027,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c93"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1038,7 +1040,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c94"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1051,7 +1053,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c95"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1064,7 +1066,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c96"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1077,7 +1079,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c97"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1090,7 +1092,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c98"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
@@ -1103,7 +1105,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/c99"
                 android:layout_width="42dp"
                 android:layout_height="42dp"
