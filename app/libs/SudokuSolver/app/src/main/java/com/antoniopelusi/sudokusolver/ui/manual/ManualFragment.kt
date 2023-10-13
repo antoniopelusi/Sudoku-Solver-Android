@@ -126,7 +126,7 @@ class ManualFragment : Fragment() {
         writeBoard(emptyBoard)
     }
 
-    fun writeBoard(board: Array<IntArray>)
+    private fun writeBoard(board: Array<IntArray>)
     {
         for(i in 0 until 9)
         {
@@ -176,13 +176,15 @@ class ManualFragment : Fragment() {
         _binding = FragmentManualBinding.inflate(inflater, container, false)
 
         val solveButton = binding.solveButtonManual
-        solveButton.setOnClickListener {
+        solveButton.setOnClickListener()
+        {
             board = readBoard(cells)
             solver.solve(board, 0, 0)
             writeBoard(board)
         }
         val resetButton = binding.resetButtonManual
-        resetButton.setOnClickListener {
+        resetButton.setOnClickListener()
+        {
             writeBoard(emptyBoard)
         }
 

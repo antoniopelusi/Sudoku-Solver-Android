@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">Sudoku Solver</string>
+    <string name="results_name">Results</string>
     <string name="title_home">Home</string>
     <string name="title_camera">Camera</string>
     <string name="title_manual">Manual</string>
     <string name="open_camera">Open camera</string>
     <string name="reset">Reset</string>
     <string name="solve">Solve</string>
+    <string name="exit">Exit</string>
     <string name="scan_qr">Scan QR</string>
     <string name="sudoku_solver">Sudoku Solver</string>
     <string name="text_home">Use the navigation bar below\nto start solving a Sudoku</string>
