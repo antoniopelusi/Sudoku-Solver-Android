@@ -6,14 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.antoniopelusi.sudokusolver.ResultsActivity
 import com.antoniopelusi.sudokusolver.databinding.FragmentCameraBinding
 import com.google.mlkit.vision.barcode.common.Barcode
 import com.google.mlkit.vision.codescanner.GmsBarcodeScannerOptions
 import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
-import java.io.Serializable
 
 class CameraFragment : Fragment() {
 

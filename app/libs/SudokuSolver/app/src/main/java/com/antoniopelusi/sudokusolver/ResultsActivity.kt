@@ -2,14 +2,10 @@ package com.antoniopelusi.sudokusolver
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 
 class ResultsActivity : AppCompatActivity() {
-
-    private val emptyBoard = Array(9) { IntArray(9) }
 
     private lateinit var board: Array<IntArray>
 
@@ -123,11 +119,11 @@ class ResultsActivity : AppCompatActivity() {
             {
                 if(board[i][j] == 0)
                 {
-                    cells[i][j]?.setText("")
+                    cells[i][j]?.text = ""
                 }
                 else
                 {
-                    cells[i][j]?.setText(board[i][j].toString())
+                    cells[i][j]?.text = board[i][j].toString()
                 }
             }
         }

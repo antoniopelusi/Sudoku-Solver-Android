@@ -1,22 +1,8 @@
 package com.antoniopelusi.sudokusolver
 
 class Solver {
-    fun return_board(board: Array<IntArray>)
-    {
-        var out = String()
 
-        for(x in 0 until 9)
-        {
-            for(y in 0 until 9)
-            {
-                out += board[x][y]
-                out += "  "
-            }
-            out += "\n"
-        }
-    }
-
-    fun check(board: Array<IntArray>, row: Int, column: Int, num: Int): Boolean
+    private fun check(board: Array<IntArray>, row: Int, column: Int, num: Int): Boolean
     {
         for(y in 0 until 9)
         {

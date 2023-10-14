@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="sepia_light">#C5B091</color>
-    <color name="sepia_dark">#91816B</color>
+    <color name="color_light">#B6A387</color>
+    <color name="color_dark">#7C6E58</color>
     <color name="grey_dark">#2E2E2E</color>
     <color name="grey_light">#8E8E8E</color>
     <color name="grey">#535353</color>

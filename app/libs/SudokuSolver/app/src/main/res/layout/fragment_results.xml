@@ -32,9 +32,8 @@
                 android:background="@drawable/edit_text_border"
                 android:fontFamily="monospace"
                 android:maxLength="1"
-                android:text="1"
-                android:gravity="center"
                 android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -44,11 +43,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -57,11 +56,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -70,11 +69,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -83,11 +82,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -96,11 +95,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -109,11 +108,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -122,11 +121,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -135,11 +134,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -153,11 +152,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -166,11 +165,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -179,11 +178,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -192,11 +191,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -205,11 +204,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -218,11 +217,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -231,11 +230,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -244,11 +243,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -257,11 +256,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -275,11 +274,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -288,11 +287,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -301,11 +300,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -314,11 +313,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -327,11 +326,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -340,11 +339,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -353,11 +352,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -366,11 +365,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -379,11 +378,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -397,11 +396,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -410,11 +409,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -423,11 +422,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -436,11 +435,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -449,11 +448,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -462,11 +461,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -475,11 +474,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -488,11 +487,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -501,11 +500,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -519,11 +518,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -532,11 +531,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -545,11 +544,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -558,11 +557,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -571,11 +570,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -584,11 +583,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -597,11 +596,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -610,11 +609,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -623,11 +622,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -641,11 +640,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -654,11 +653,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -667,11 +666,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -680,11 +679,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -693,11 +692,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -706,11 +705,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -719,11 +718,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -732,11 +731,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -745,11 +744,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -763,11 +762,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -776,11 +775,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -789,11 +788,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -802,11 +801,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -815,11 +814,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -828,11 +827,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -841,11 +840,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -854,11 +853,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -867,11 +866,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -885,11 +884,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -898,11 +897,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -911,11 +910,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -924,11 +923,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -937,11 +936,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -950,11 +949,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -963,11 +962,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -976,11 +975,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -989,11 +988,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -1007,11 +1006,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1020,11 +1019,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1033,11 +1032,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1046,11 +1045,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1059,11 +1058,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1072,11 +1071,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1085,11 +1084,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1098,11 +1097,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -1111,11 +1110,11 @@
                 android:layout_height="42dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_border"
-                android:digits="123456789"
                 android:fontFamily="monospace"
-                android:inputType="number"
                 android:maxLength="1"
                 android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
     </TableLayout>

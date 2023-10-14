@@ -22,7 +22,7 @@
             android:layout_marginEnd="8dp"
             android:text="@string/sudoku_solver"
             android:textAlignment="center"
-            android:textColor="@color/sepia_dark"
+            android:textColor="@color/color_light"
             android:textSize="34sp"
             android:textStyle="bold" />
 
