@@ -126,11 +126,11 @@ class ManualFragment : Fragment() {
 
     private fun writeBoard(board: Array<IntArray>)
     {
-        for(i in 0 until 9)
+        for (i in 0 until 9)
         {
-            for(j in 0 until 9)
+            for (j in 0 until 9)
             {
-                if(board[i][j] == 0)
+                if (board[i][j] == 0)
                 {
                     cells[i][j]?.setText("")
                 }
@@ -158,7 +158,6 @@ class ManualFragment : Fragment() {
                 {
                     newBoard[i][j] = cells[i][j]?.text.toString().toInt()
                 }
-
             }
         }
 

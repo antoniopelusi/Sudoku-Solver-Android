@@ -31,33 +31,35 @@ class CameraFragment : Fragment() {
 
     private fun qrReader()
     {
-        val options = GmsBarcodeScannerOptions.Builder().setBarcodeFormats(Barcode.FORMAT_QR_CODE).enableAutoZoom().build()
-        val scanner = GmsBarcodeScanning.getClient(requireContext(), options)
+        Thread {
 
-        scanner.startScan()
-            .addOnSuccessListener{
-                barcode -> rawValue = barcode.rawValue
+            val options =
+                GmsBarcodeScannerOptions.Builder().setBarcodeFormats(Barcode.FORMAT_QR_CODE)
+                    .enableAutoZoom().build()
+            val scanner = GmsBarcodeScanning.getClient(requireContext(), options)
 
-                if (rawValue != null)
-                {
-                    rawArray = rawValue!!.toCharArray()
+            scanner.startScan()
+                .addOnSuccessListener { barcode ->
+                    rawValue = barcode.rawValue
 
-                    for((k, i) in (0 until 9).withIndex())
-                    {
-                        for(j in 0 until 9)
-                        {
-                            board[i][j] = rawArray[j+k].code
+                    if (rawValue != null) {
+                        rawArray = rawValue!!.toCharArray()
+
+                        for ((k, i) in (0 until 9).withIndex()) {
+                            for (j in 0 until 9) {
+                                board[i][j] = rawArray[j + k].code
+                            }
                         }
                     }
+                    isComplete = true
+                }.addOnCompleteListener {
+
+                }.addOnFailureListener {
+
+                }.addOnCanceledListener {
+
                 }
-                isComplete = true
-            }.addOnCompleteListener {
-
-            }.addOnFailureListener {
-
-            }.addOnCanceledListener {
-
-            }
+        }.start()
     }
 
     override fun onCreateView(
