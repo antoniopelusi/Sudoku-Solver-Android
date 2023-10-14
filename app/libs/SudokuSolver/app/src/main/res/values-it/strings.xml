@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sudoku Solver</string>
+    <string name="results_name">Risultati</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_manual">Manuale</string>
+    <string name="open_camera">Apri camera</string>
+    <string name="reset">Reset</string>
+    <string name="solve">Risolvi</string>
+    <string name="exit">Esci</string>
+    <string name="scan_qr">Scansiona QR</string>
+    <string name="sudoku_solver">Sudoku Solver</string>
+    <string name="text_home">Usa la barra di navigazione qui sotto\nper risolvere un Sudoku</string>
+    <string name="text_camera">Scansiona il codice QR del Sudoku\nper risolverlo</string>
+    <string name="error">Questo codice QR non contiene un Sudoku</string>
+</resources>
