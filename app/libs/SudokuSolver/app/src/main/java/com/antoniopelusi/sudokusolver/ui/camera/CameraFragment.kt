@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast.LENGTH_SHORT
+import android.widget.Toast.makeText
 import androidx.fragment.app.Fragment
+import com.antoniopelusi.sudokusolver.R
 import com.antoniopelusi.sudokusolver.ResultsActivity
 import com.antoniopelusi.sudokusolver.databinding.FragmentCameraBinding
 import com.google.mlkit.vision.barcode.common.Barcode
@@ -42,11 +45,14 @@ class CameraFragment : Fragment() {
                 .addOnSuccessListener { barcode ->
                     rawValue = barcode.rawValue
 
-                    if (rawValue != null) {
+                    if (rawValue?.length == 81)
+                    {
                         rawArray = rawValue!!.toCharArray()
 
-                        for ((k, i) in (0 until 9).withIndex()) {
-                            for (j in 0 until 9) {
+                        for ((k, i) in (0 until 9).withIndex())
+                        {
+                            for (j in 0 until 9)
+                            {
                                 board[i][j] = rawArray[j + k].code
                             }
                         }
@@ -83,12 +89,19 @@ class CameraFragment : Fragment() {
         super.onResume()
         if(isComplete)
         {
-            val intent = Intent(activity, ResultsActivity::class.java)
+            if(rawValue?.length == 81)
+            {
+                val intent = Intent(activity, ResultsActivity::class.java)
 
-            intent.putExtra("rawValue", rawValue)
-            startActivity(intent)
+                intent.putExtra("rawValue", rawValue)
+                startActivity(intent)
 
-            isComplete = false
+                isComplete = false
+            }
+            else
+            {
+                makeText(context, R.string.error, LENGTH_SHORT).show()
+            }
         }
     }
 

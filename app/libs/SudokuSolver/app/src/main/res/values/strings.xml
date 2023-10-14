@@ -12,4 +12,5 @@
     <string name="sudoku_solver">Sudoku Solver</string>
     <string name="text_home">Use the navigation bar below\nto start solving a Sudoku</string>
     <string name="text_camera">Scan the Sudoku QR code\nto solve it</string>
+    <string name="error">This QR code does not contain a Sudoku</string>
 </resources>

@@ -32,3 +32,5 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 }
+//TODO: ITALIAN LANGUAGE TRANSLATION
+//TODO: UI SCREEN ROTATION
