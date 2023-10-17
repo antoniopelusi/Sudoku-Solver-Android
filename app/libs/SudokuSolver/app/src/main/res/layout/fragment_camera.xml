@@ -7,31 +7,37 @@
     android:id="@+id/fragment_camera"
     tools:context=".ui.camera.CameraFragment">
 
-    <TextView
-        android:id="@+id/text_home2"
-        android:layout_width="269dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="71dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/text_camera"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/scan_qr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="109dp"
-        android:text="@string/scan_qr"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/text_camera"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/scan_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_qr" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

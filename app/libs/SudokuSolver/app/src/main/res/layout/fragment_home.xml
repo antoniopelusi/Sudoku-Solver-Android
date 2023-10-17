@@ -15,27 +15,36 @@
 
         <TextView
             android:id="@+id/title_home"
-            android:layout_width="match_parent"
-            android:layout_height="156dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/sudoku_solver"
             android:textAlignment="center"
-            android:textColor="@color/color_light"
+            android:textColor="@color/color_dark"
             android:textSize="34sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
             android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/text_home"
-            android:layout_width="269dp"
-            android:layout_height="170dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/text_home"
             android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
             android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -74,4 +74,25 @@ class Solver {
 
         return false
     }
+
+    fun checkBoard(board: Array<IntArray>): Boolean
+    {
+        for(i in 0 until 9)
+        {
+            for (j in 0 until 9)
+            {
+                if(board[i][j] != 0)
+                {
+                    for(num in 1 until 9 + 1)
+                    {
+                        if(!check(board, i, j, num))
+                        {
+                            return false
+                        }
+                    }
+                }
+            }
+        }
+        return true
+    }
 }

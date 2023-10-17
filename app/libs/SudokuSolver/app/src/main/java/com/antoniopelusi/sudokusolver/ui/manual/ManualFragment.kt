@@ -1,14 +1,20 @@
 package com.antoniopelusi.sudokusolver.ui.manual
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.antoniopelusi.sudokusolver.R
-import com.antoniopelusi.sudokusolver.databinding.FragmentManualBinding
 import com.antoniopelusi.sudokusolver.Solver
+import com.antoniopelusi.sudokusolver.databinding.FragmentManualBinding
+
 
 class ManualFragment : Fragment() {
 
@@ -176,8 +182,17 @@ class ManualFragment : Fragment() {
         solveButton.setOnClickListener()
         {
             board = readBoard(cells)
-            solver.solve(board, 0, 0)
-            writeBoard(board)
+
+            if(solver.checkBoard(board))
+            {
+                solver.solve(board, 0, 0)
+                writeBoard(board)
+            }
+            else
+            {
+                Toast.makeText(context, R.string.malformed_sudoku, Toast.LENGTH_SHORT).show()
+            }
+
         }
         val resetButton = binding.resetButtonManual
         resetButton.setOnClickListener()
@@ -191,11 +206,26 @@ class ManualFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initBoard()
+        Thread {
+            initBoard()
+        }.start()
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    @SuppressLint("SourceLockedOrientationActivity")
+    override fun onResume() {
+        super.onResume()
+        //lock screen to portrait
+        activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+    }
+
+    override fun onPause() {
+        super.onPause()
+        //set rotation to sensor dependent
+        activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_USER
     }
 }
