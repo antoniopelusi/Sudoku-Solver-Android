@@ -2,19 +2,19 @@ package com.antoniopelusi.sudokusolver.ui.manual
 
 import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
-import android.content.res.Configuration
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import com.antoniopelusi.sudokusolver.R
 import com.antoniopelusi.sudokusolver.Solver
 import com.antoniopelusi.sudokusolver.databinding.FragmentManualBinding
-
+import java.io.File
 
 class ManualFragment : Fragment() {
 
@@ -29,6 +29,14 @@ class ManualFragment : Fragment() {
     private lateinit var cells: Array<Array<EditText?>>
 
     private val solver = Solver()
+
+    private var arraySavedBoard = Array(9) { IntArray(9) }
+
+    private var savedBoard: String = ""
+
+    private lateinit var filepath: String
+    private lateinit var file: File
+    private lateinit var uri: Uri
 
     private fun initBoard()
     {
@@ -127,7 +135,31 @@ class ManualFragment : Fragment() {
                 arrayOf(c91, c92, c93, c94, c95, c96, c97, c98, c99)
             )
 
-        writeBoard(emptyBoard)
+        filepath = requireContext().filesDir.toString() + File.separator + "sudoku.txt"
+        file = File(filepath)
+
+        if(!file.exists())
+        {
+            val str: String = "0".repeat(81)
+            file.writeText(str)
+        }
+
+        uri = FileProvider.getUriForFile(requireContext(), "com.antoniopelusi.fileprovider", file)
+        val inputStream = context?.contentResolver?.openInputStream(uri)
+        savedBoard = inputStream?.bufferedReader()?.readText().toString()
+
+        arraySavedBoard = Array(9) { IntArray(9) }
+        var c = 0
+        for (i in 0 until 9)
+        {
+            for (j in 0 until 9)
+            {
+                arraySavedBoard[i][j] = savedBoard[c].toString().toInt()
+                c++
+            }
+        }
+        writeBoard(arraySavedBoard)
+        inputStream?.close()
     }
 
     private fun writeBoard(board: Array<IntArray>)
@@ -206,9 +238,9 @@ class ManualFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Thread {
+        //Thread {
             initBoard()
-        }.start()
+        //}.start()
     }
 
     override fun onDestroyView() {
@@ -219,13 +251,36 @@ class ManualFragment : Fragment() {
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onResume() {
         super.onResume()
+        if(file.exists())
+            writeBoard(arraySavedBoard)
         //lock screen to portrait
         activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 
     override fun onPause() {
         super.onPause()
+        saveSudoku(readBoard(cells))
         //set rotation to sensor dependent
         activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_USER
+    }
+
+    private fun getBoardsValues(board: Array<IntArray>): String
+    {
+        var strBoard = ""
+        for(i in board)
+        {
+            for(j in i)
+            {
+                strBoard += j.toString()
+            }
+        }
+        return strBoard
+    }
+
+    private fun saveSudoku(board: Array<IntArray>)
+    {
+        file.createNewFile()
+
+        file.writeText(getBoardsValues(board))
     }
 }

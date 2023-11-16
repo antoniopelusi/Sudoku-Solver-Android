@@ -14,5 +14,5 @@
     <string name="text_camera">Scansiona il codice QR del Sudoku\nper risolverlo</string>
     <string name="error">Questo codice QR non contiene un Sudoku</string>
     <string name="horizontal_text">Torna nella modalità ritratto\nper visualizzare il risultato</string>
-    <string name="malformed_sudoku">Questo Sudoku non ha soluzione</string>
+    <string name="malformed_sudoku">Questo Sudoku non ha soluzione o è vuoto</string>
 </resources>
