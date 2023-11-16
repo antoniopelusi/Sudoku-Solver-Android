@@ -1,6 +1,6 @@
 package com.antoniopelusi.sudokusolver
 
-import android.util.Log
+var count = 0
 
 class Solver {
 
@@ -40,6 +40,14 @@ class Solver {
 
     fun solve(board: Array<IntArray>, _row: Int, _column: Int): Boolean
     {
+        count++
+
+        //automatically stop itself when can't find a solution
+        if(count>100000)
+        {
+            return true
+        }
+
         var row = _row
         var column = _column
 
@@ -80,49 +88,37 @@ class Solver {
     fun checkBoard(board: Array<IntArray>): Boolean
     {
         //check for empty board
-        var count = 0
+        var countZeros = 0
         for(i in 0 until 9)
         {
             for (j in 0 until 9)
             {
                 if(board[i][j] == 0)
                 {
-                    count++
+                    countZeros++
                 }
             }
         }
-        if(count == 81)
+        if(countZeros == 81)
         {
             return false
         }
 
-        //check for no solution
+        return true
+    }
+
+    fun checkForZeros(board: Array<IntArray>): Boolean
+    {
         for(i in 0 until 9)
         {
             for (j in 0 until 9)
             {
-                if(board[i][j] != 0)
+                if(board[i][j] == 0)
                 {
-                    count = 0
-
-                    for(num in 1 until 9 + 1)
-                    {
-                        //Log.v("i=$i j=$j num=$num", check(board, i, j, num).toString())
-
-                        if(!check(board, i, j, num))
-                        {
-                            count++
-                        }
-                        if(count > 9)
-                        {
-                            return false
-                        }
-                    }
+                    return true
                 }
             }
         }
-
-
-        return true
+        return false
     }
 }

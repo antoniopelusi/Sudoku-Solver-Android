@@ -15,6 +15,7 @@ import com.antoniopelusi.sudokusolver.R
 import com.antoniopelusi.sudokusolver.Solver
 import com.antoniopelusi.sudokusolver.databinding.FragmentManualBinding
 import java.io.File
+import com.antoniopelusi.sudokusolver.count
 
 class ManualFragment : Fragment() {
 
@@ -217,12 +218,22 @@ class ManualFragment : Fragment() {
 
             if(solver.checkBoard(board))
             {
+                count = 0
+
                 solver.solve(board, 0, 0)
-                writeBoard(board)
+
+                if(!solver.checkForZeros(board))
+                {
+                    writeBoard(board)
+                }
+                else
+                {
+                    Toast.makeText(context, R.string.malformed_sudoku, Toast.LENGTH_SHORT).show()
+                }
             }
             else
             {
-                Toast.makeText(context, R.string.malformed_sudoku, Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, R.string.empty_sudoku, Toast.LENGTH_SHORT).show()
             }
 
         }

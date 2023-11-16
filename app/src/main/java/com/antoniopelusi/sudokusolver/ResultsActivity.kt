@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import com.antoniopelusi.sudokusolver.count
 
 class ResultsActivity : AppCompatActivity() {
 
@@ -161,8 +163,21 @@ class ResultsActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.solve_button_results).setOnClickListener()
         {
-            solver.solve(board, 0, 0)
-            writeBoard(board)
+            if(solver.checkBoard(board)) {
+                count = 0
+
+                solver.solve(board, 0, 0)
+
+                if (!solver.checkForZeros(board)) {
+                    writeBoard(board)
+                } else {
+                    Toast.makeText(this, R.string.malformed_sudoku, Toast.LENGTH_SHORT).show()
+                }
+            }
+            else
+            {
+                Toast.makeText(this, R.string.empty_sudoku, Toast.LENGTH_SHORT).show()
+            }
         }
 
         findViewById<Button>(R.id.exit_button_results).setOnClickListener()
